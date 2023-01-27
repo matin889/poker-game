@@ -93,7 +93,7 @@ class Player {
     }
   }
   getValueOfCards() {
-    this.cards.reduce((accumalator, card) => {
+    return this.cards.reduce((accumalator, card) => {
       return accumalator + parseInt(card.Value);
     }, 0);
   }
@@ -120,10 +120,9 @@ class Main {
     console.log(this.player1);
 
     // Slim's cards value
-    let cardsValue = this.player1.cards.reduce((accumalator, card) => {
-      return accumalator + parseInt(card.Value);
-    }, 0);
-    console.log(`${this.player1.name}'s Card value is ${cardsValue}`);
+    console.log(
+      `${this.player1.name}'s Card value is ${this.player1.getValueOfCards()}`
+    );
     // this.deck.shuffleDeck();
     // console.log(this.deck);
 
@@ -132,10 +131,9 @@ class Main {
     console.log(this.player2);
 
     // Luke's cards value
-    let cardsValues = this.player2.cards.reduce((accumalator, card) => {
-      return accumalator + parseInt(card.Value);
-    }, 0);
-    console.log(`${this.player2.name}'s Card value is ${cardsValues}`);
+    console.log(
+      `${this.player2.name}'s Card value is ${this.player2.getValueOfCards()}`
+    );
     // Deck is having 42 cards now
     console.log(this.deck);
 
