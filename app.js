@@ -131,6 +131,7 @@ class Main {
     console.log(this.player2);
 
     // Luke's cards value
+
     console.log(
       `${this.player2.name}'s Card value is ${this.player2.getValueOfCards()}`
     );
@@ -152,6 +153,9 @@ class Main {
     console.log(this.player1);
 
     // Slim's cards value
+    console.log(
+      `${this.player1.name}'s Card value is ${this.player1.getValueOfCards()}`
+    );
     // this.deck.shuffleDeck();
     // console.log(this.deck);
     //Luke will take 2 cards
@@ -159,7 +163,9 @@ class Main {
     console.log(this.player2);
 
     // Luke's cards value
-
+    console.log(
+      `${this.player2.name}'s Card value is ${this.player2.getValueOfCards()}`
+    );
     //Deck is having 38 cards and discard pile is having 4 cards now
     this.deck.shuffleDeck();
     console.log(this.deck);
